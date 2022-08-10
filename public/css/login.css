@@ -3,7 +3,8 @@ body {
     height: 100vh;
 }
 form {
-    width: 300px;
+    width: auto;
+    padding-right: 35px;
 }
 input {
     border: none;
