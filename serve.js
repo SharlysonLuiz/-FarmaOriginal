@@ -14,8 +14,10 @@ const uri = "mongodb+srv://dbUser:dbUser@cluster0.rcapfpn.mongodb.net/?retryWrit
 MongoClient.connect(uri,(err, client) =>{
     if(err) return console.log(err)
     db = client.db('bancoPlus')
+
+    const PORT = process.env.PORT || 3000;
     
-    app.listen(3000 , () =>{
+    app.listen(PORT , () =>{
         console.log("RODANDO")
     })
 })
@@ -48,9 +50,9 @@ app.post('/show',(req,res)=>{
     console.log(req.body)
 })
 
-app.get('/', (req,res) =>{
-    let cursor = db.collection('clientePlus2').find()
-})
+// app.get('/', (req,res) =>{
+//     let cursor = db.collection('clientePlus2').find()
+// })
 /*
 app.post('/register',(req,res) =>{
     db.collection("clientePlus").insertOne(req.body,(err,result) => {
