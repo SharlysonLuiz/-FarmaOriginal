@@ -15,9 +15,9 @@ MongoClient.connect(uri,(err, client) =>{
     if(err) return console.log(err)
     db = client.db('bancoPlus')
 
-    const PORT = process.env.PORT || 5000;
+    //const PORT = process.env.PORT || 5000;
     
-    app.listen(PORT , () =>{
+    app.listen(5000 , () =>{
         console.log("RODANDO")
     })
 })
