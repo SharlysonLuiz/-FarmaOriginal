@@ -37,9 +37,21 @@
     border-left-width: 0px;
     border-bottom-width: 0px;
 }
+
 .linkum{
-    text-decoration: none
+    background-color: none;
+    border: none;
+    border-radius: none;
 }
+
+.linkum:hover{
+    background-color: rgb(1, 1, 1,0.1);
+    border-radius: 20px;
+    transition: .2s;
+    transition-timing-function: ease-out;
+}
+
+
 
 /* TELA LOGIN*/
 
